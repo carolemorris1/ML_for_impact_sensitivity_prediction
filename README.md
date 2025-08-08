@@ -8,11 +8,11 @@ Information on included files:
 	- 'Dataset' contains SMILES strings for input into model
 	- 'Descriptor List' contains all of the model descriptors to be called by the script to be extracted for each molecule
 	
-Output is 'DataOutput'. NOTE: if adding in new data, this should be checked by the user before moving on to the next step, particularly for the Class II trigger bonds (see paper for description of these). The script is perfect at picking these out as sometimes SMILES strings aren't structured in the expected way.
+Output is 'DataOutput'. NOTE: if adding in new data, this should be checked by the user before moving on to the next step, 	particularly for the Class II trigger bonds (see paper for description of these). The script is not perfect at picking these out.
  
 - Models:
-	- 'DataPreprocessing' Jupyter notebook - this takes in the output of the feature extraction script ('DataOutput') and scales all data to be of similar magnitudes. Output is 		'df_processed'
-	- 'ModelsRun' Jupyter notebook - takes in 'df_processed' and 'targets' (a file containing IS classification values) and allows for all models to be run. Also takes in 			lgbm_params.pkl and rf_params.pkl for faster notebook running if desired.
+	- 'DataPreprocessing' Jupyter notebook - this takes in the output of the feature extraction script ('DataOutput') and scales all data to be of similar magnitudes. Output is 'df_processed'
+	- 'ModelsRun' Jupyter notebook - takes in 'df_processed' and 'targets' (a file containing IS classification values) and allows for all models to be run. Also takes in parameters in the form of .pkl files for faster notebook running if desired.
 
 Instructions for use:
 
