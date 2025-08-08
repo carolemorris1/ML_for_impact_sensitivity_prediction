@@ -1,0 +1,19 @@
+name: chem
+channels:
+  - conda-forge
+dependencies:
+  - hyperopt
+  - jupyter
+  - lightgbm
+  - matplotlib
+  - pandas
+  - python=3.9
+  - scikit-learn
+  - seaborn
+  - pip:
+    - openpyxl==3.1.5
+    - rdkit==2025.3.2
+    - shap==0.47.2
+    - tensorflow==2.16.1
+
+prefix: "C:\\Users\\katri\\miniconda3\\envs\\chem"
