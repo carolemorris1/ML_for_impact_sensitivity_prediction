@@ -145,9 +145,9 @@ def analyse(molecules_inp, descriptors_inp):
 # # # MAIN JOB # # #
 
 # load 'Dataset.xlsx' as a pandas dataframe molecules_inp
-molecules_inp = pd.read_excel('c:/Projects/Chemistry/Files for GitHub/PredictTest/TestDataset.xlsx')
+molecules_inp = pd.read_excel('Dataset.xlsx') # Edit to relevant path
 # load 'Descriptor List.xlsx' as a pandas dataframe descriptors_inp
-descriptors_inp = pd.read_excel('c:/Projects/Chemistry/Files for GitHub/PredictTest/Descriptor List.xlsx')
+descriptors_inp = pd.read_excel('Descriptor List.xlsx') # Edit to relevant path
 # analyse molecules and obtain counting descriptor list of lists.
 listofmolecules = analyse(molecules_inp, descriptors_inp)
 
@@ -158,4 +158,4 @@ columns = list((descriptors_inp.T).iloc[0,:])
 moleculeswithdescriptors_out = pd.DataFrame(listofmolecules, columns=columns)
 
 # write to output Excel workbook (in row order of input SMILES)
-moleculeswithdescriptors_out.to_excel('c:/Projects/Chemistry/Files for GitHub/PredictTest/DataOutput.xlsx')
+moleculeswithdescriptors_out.to_excel('DataOutput.xlsx') # Edit to relevant path - this will be the input to 01-DataPreprocessing.ipynb
