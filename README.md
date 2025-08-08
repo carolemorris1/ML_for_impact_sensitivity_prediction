@@ -2,8 +2,6 @@
 Repository containing energetic materials for impact sensitivity database and ML models
 
 Information on included files:
-
-- 'ESI Data Set' - all compounds (including SMILES strings, structures & IS data with reference) for all 485 compounds used to train and test the models.
  
 - Feature extraction:
 	- 'FeatureExtractor.py' - this takes in two files: 'Dataset' and 'Descriptor List'
